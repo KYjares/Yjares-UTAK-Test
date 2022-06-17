@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+body {
+    background-color: #eaebe5 !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+    position: relative;
+    background-color: #eaebe5;
+    border-radius: 5%;
+    padding: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 30px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+th {
+    text-align: center;
+    vertical-align: middle;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+td {
+    vertical-align: middle;
 }
 
-.App-link {
-  color: #61dafb;
+table{
+    background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#header {
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+#content {
+    padding-top: 4%;
+    padding-left: 4%;
+}
+  
+#footer {
+    width: 100%;
+    position: fixed;
+	bottom: 0;
+    background-color: grey;
+    color: white;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#table-container {
+    margin-right: 4%;
+}
+
+#button-add-item {
+    position: relative;
+    left: 45%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+.popup-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(111,111,111,0.5); 
+    z-index: 9;   
+}
+
+.popup-content {
+    z-index: 10;   
+}
+
+.pagination-button{
+    padding: 0;
+    border: none;
+    background: none;
+    padding: 0 10px;
+}
+
+.button-close{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border: none;
+    background: none;
+}
+
+.pagination, .form-header, .form-button {
+    display: flex;
+    justify-content: center;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-header {
+    margin-bottom: 30px;
+}
+
+.form-button {
+    position: relative;
+    left: 30%;
+}
+
+.form-field {
+    margin-top: 10px;
+}
+
+.form-check-input{
+    float: left;
+    margin-right: 5px;
+}
+
+/* Hide arrow buttons for number input value */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
